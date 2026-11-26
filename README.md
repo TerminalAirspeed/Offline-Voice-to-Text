@@ -59,17 +59,7 @@ To capture the app interface for layout feedback:
 
 Screenshot mode starts **OFF**. Outside the temporary window, Offline Voice restores its `FLAG_SECURE` protection. Screenshots taken during the window may contain the contents of the *other* app on screen, as well as your dictated text. **Review and redact screenshots before sharing**; turning the mode off does not delete screenshots already saved by Android. Other apps' screenshot protections are not bypassed.
 
-## Build from source (Android Studio)
 
-The project targets Android API 37 and currently builds for **ARM64** (`arm64-v8a`). The Alpha 3 R9 project uses **Gradle 9.4.1**, **Android Gradle Plugin 9.2.0**, and Java 17.
-
-1. Extract the Android Studio source project into a fresh folder.
-2. Open that folder in Android Studio with the Android SDK/NDK configured.
-3. Connect your build computer to the internet for the **first build**. Its setup task downloads the pinned FUTO asr4all Medium model (~60 MB), verifies its SHA-256 checksum, and packages it with the app.
-4. Select **Build → Build APK(s)**, then install the resulting APK on a compatible Android device.
-5. After installing, voice recognition runs locally; the phone does not need internet access to dictate.
-
-The model is not stored in this README package. The required model, metadata, and license are prepared by the **Android Studio source project's** verified build process.
 
 ### If something does not work
 
